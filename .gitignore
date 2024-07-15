@@ -1,0 +1,5 @@
+.env
+__pycache__
+VENV
+.vdcode
+README.md
