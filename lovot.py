@@ -12,7 +12,7 @@ LOVOT_ACCESS_URL_STAGE = config.LOVOT_ACCESS_URL_STAGE
 
 
 # APIを叩く
-def request_get(type, start_time):
+def request_get(start_time):
   # エンドポイント
   API_ENDPOINT = LOVOT_ACCESS_URL_STAGE.replace("GHOST_ID", LOVOT_GHOST_ID)
   
