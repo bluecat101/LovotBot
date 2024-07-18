@@ -19,7 +19,7 @@ def request_get(start_time):
   # APIに送信する情報
   headers = {"accept": "application/json"}
   # 送信するURL
-  url = f"{API_ENDPOINT}daily?start_time={start_time}&key={LOVOT_API_KEY}"
+  url = f"{API_ENDPOINT}?start_time={start_time}&key={LOVOT_API_KEY}"
 
   # API接続の実行
   result = requests.get(url,headers=headers)
