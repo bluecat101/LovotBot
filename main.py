@@ -24,7 +24,6 @@ event_data = convert_datetime.convert_json_for_JST(data["events"])
 df = pd.DataFrame.from_dict(event_data)
 
 last_event_log = event_data[-1]["event_name"]
-print(df)
 last_fallen_date = df[df["event_name"] == "FALLEN"]["time"].iloc[-1] if "FALLEN" in df["event_name"].values else None
 
 # ログファイルの先頭行を取得する
